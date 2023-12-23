@@ -1,0 +1,19 @@
+[package]
+name = "rust_blog"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "blog-rs"
+path = "src/main.rs"
+
+[[bin]]
+name = "markd"
+path = "src/bin/markd.rs"
+
+[dependencies]
+tokio = {version="1.28.0", features = ["macros", "rt-multi-thread"]}
+axum = {version= "0.6.17", features = ["headers"]}
+askama = {version="0.12.0", features=["markdown"]}
+sqlx = {version = "0.6.3", features = ["runtime-tokio-rustls", "postgres", "macros", "time"]} 
+tower-http = {version = "0.4", features=["full"]}

@@ -1,0 +1,9 @@
+body {
+	background: #ffffff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#Post {
+	background: #bb73de;
+}
